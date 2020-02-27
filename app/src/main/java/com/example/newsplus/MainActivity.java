@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         String country = Utils.getCountry();
 
         Call<News> call;
-        call = apiInterface.getNews("india", "48b69dd644b54337a5171b42d66dcf5c");
+        call = apiInterface.getNews("IN", API_KEY);
 
         call.enqueue(new Callback<News>() {
             @Override
